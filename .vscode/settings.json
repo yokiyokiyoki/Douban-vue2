@@ -1,0 +1,36 @@
+{
+    "editor.detectIndentation": false,
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "typescript.check.tscVersion": false,
+    "typescript.check.workspaceVersion": false,
+    "css.validate": false,
+    "scss.validate": false,
+    "javascript.validate.enable": false,
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4,
+    "beautify.editorconfig": true,
+    "beautify.language": {
+        "js": {
+            "type": [
+                "javascript",
+                "json"
+            ],
+            "filename": [
+                ".jshintrc",
+                ".jsbeautify"
+            ]
+        },
+        "css": [
+            "css",
+            "scss"
+        ],
+        "html": [
+            "htm",
+            "html"
+        ]
+    },
+    "html.format.unformatted": "a, var",
+    "editor.formatOnSave": true,
+    "vsicons.presets.angular": false
+}
