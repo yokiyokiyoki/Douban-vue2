@@ -11,6 +11,7 @@ module.exports = {
         filename: 'bundle.js'
     },
     module: {
+        // 加载各种js，img文件资源
         loaders: [{
                 test: /\.js$/,
                 loaders: ['babel-loader'],
@@ -30,5 +31,15 @@ module.exports = {
             }
         ]
     },
-    devtool: 'source-map'
+    // 启用位置信息调试
+    devtool: 'source-map',
+    // 配置别名
+    resolve: {
+        alias: {
+            'src': path.resolve(__dirname, '../src'),
+            'components': path.resolve(__dirname, '../src/components'),
+            'img': path.resolve(__dirname, '../src/assets/img/'),
+
+        }
+    }
 }
