@@ -9535,31 +9535,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "id": "test"
     }
-  }, [_c('x-header', [_vm._v("Yoki")]), _vm._v(" "), _c('section-header'), _vm._v(" "), _c('p', [_vm._v("hi" + _vm._s(_vm.msg))]), _vm._v(" "), _c('router-link', {
-    attrs: {
-      "to": "/glen"
-    }
-  }, [_vm._v("glen")]), _vm._v(" "), _c('router-link', {
-    attrs: {
-      "to": "/timo"
-    }
-  }, [_vm._v("timo")]), _vm._v(" "), _c('router-link', {
-    attrs: {
-      "to": "/yoki"
-    }
-  }, [_vm._v("yoki")]), _vm._v(" "), _c('router-link', {
-    attrs: {
-      "to": "/yujin"
-    }
-  }, [_vm._v("浴巾")]), _vm._v(" "), _c('router-link', {
-    attrs: {
-      "to": "/zeyuan"
-    }
-  }, [_vm._v("泽源")]), _vm._v(" "), _c('router-link', {
-    attrs: {
-      "to": "/zhuocheng"
-    }
-  }, [_vm._v("卓承")]), _vm._v(" "), _c('router-view')], 1)
+  }, [_c('x-header', [_vm._v("Yoki")]), _vm._v(" "), _c('section-header'), _vm._v(" "), _c('p', [_vm._v("hi" + _vm._s(_vm.msg))]), _vm._v(" "), _c('router-view')], 1)
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
@@ -23593,46 +23569,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue__);
 
 
-const glen = {
-    template: '<div style="font-size:50px;">Glen</div>'
-};
-const yujin = {
-    template: '<div style="font-size:50px;">浴巾</div>'
-};
-const zeyuan = {
-    template: '<div style="font-size:50px;">泽源</div>'
-};
-const timo = {
-    template: '<div style="font-size:50px;">timo</div>'
-};
-const zhuocheng = {
-    template: '<div style="font-size:50px;">卓承</div>'
-};
-const yoki = {
-    template: '<div style="font-size:50px;">yoki</div>'
-};
+
 // 导入路由
 __WEBPACK_IMPORTED_MODULE_1_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_0_vue_router___default.a);
 // 定义路由
-const routes = [{
-    path: '/glen',
-    component: glen
-}, {
-    path: '/yujin',
-    component: yujin
-}, {
-    path: '/timo',
-    component: timo
-}, {
-    path: '/zeyuan',
-    component: zeyuan
-}, {
-    path: '/zhuocheng',
-    component: zhuocheng
-}, {
-    path: '/yoki',
-    component: yoki
-}];
+const routes = [];
 // 创建一个路由器实例
 const router = new __WEBPACK_IMPORTED_MODULE_0_vue_router___default.a({
     routes
