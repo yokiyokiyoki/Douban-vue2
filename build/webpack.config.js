@@ -1,5 +1,7 @@
 const path = require('path');
-module.exports = {
+// 引入vux-loader，添加vux2必须这样配置
+const vuxLoader = require('vux-loader')
+let webpackConfig = {
     entry: {
         app: ['./src/main.js']
     },
@@ -12,7 +14,7 @@ module.exports = {
     },
     module: {
         // 加载各种js，img文件资源
-        loaders: [{
+        rules: [{
                 test: /\.js$/,
                 loaders: ['babel-loader'],
                 exclude: /node_modules/
@@ -23,11 +25,22 @@ module.exports = {
                     'autoprefixer-loader', 'sass-loader'
                 ] //2.0不支持缩写
             }, {
-                test: /\.(png|jqg)$/,
-                loader: 'url-loader?limit=100000'
+                test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
+                loader: 'url-loader',
+                query: {
+                    limit: 10000
+                }
             }, {
                 test: /\.vue$/,
                 loader: 'vue-loader'
+            },
+            // 字体解析
+            {
+                test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
+                loader: 'url-loader',
+                query: {
+                    limit: 10000,
+                }
             }
         ]
     },
@@ -36,6 +49,8 @@ module.exports = {
     // 配置别名
     resolve: {
         alias: {
+            // 制定vue的别名，不然会输出vue.common.js
+            'vue': 'vue/dist/vue.js',
             'src': path.resolve(__dirname, '../src'),
             'components': path.resolve(__dirname, '../src/components'),
             'img': path.resolve(__dirname, '../src/assets/img/'),
@@ -43,3 +58,13 @@ module.exports = {
         }
     }
 }
+// 添加vux2必须这样配置
+module.exports = vuxLoader.merge(webpackConfig, {
+    plugins: [{
+            name: 'vux-ui'
+        },
+        {
+            name: 'duplicate-style'
+        }
+    ]
+})

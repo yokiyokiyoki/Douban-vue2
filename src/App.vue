@@ -1,12 +1,21 @@
 <template>
     <div id="test">
-        <h1>hi{{msg}}</h1>
-        <span v-for="n in 5">{{n}}</span>
-        <img src="../src/assets/img/map.png" alt="图片直接转换成base64编码，减少http请求">
+        <x-header>Yoki</x-header>
+        <p>hi{{msg}}</p>
+        <!--路由链接-->
+        <router-link to="/page">go to page</router-link>
+        <!--路由出口-->
+        <router-view></router-view>
     </div>
 </template>
 <script>
+    import {
+        XHeader
+    } from 'vux'
     export default {
+        components: {
+            XHeader
+        },
         data() {
             return {
                 msg: 'yoki'
@@ -17,10 +26,11 @@
 <style lang="sass">
     /*可以使用变量*/
     
-    $red:red;
+    $black:black;
+    $white:white;
     #test {
-        h1 {
-            color: $red
+        p {
+            color: $black;
         }
     }
 </style>
