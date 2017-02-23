@@ -27,10 +27,17 @@
 
 
   <link rel="assets" href="https://assets-cdn.github.com/">
+<<<<<<< HEAD
   <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6MTU1MTE4MDAzOjg5ZWFiOTliM2IxMTc3OWE1NzM5YWFiZjM5ZTdkM2M3YmYwNTYyYjM3Y2JkYTYwOGQ2MjI3MzAyYWNkMDA3ZGY=--4c23921d6b3b59ad008bd2c21aa6a4cefbfe79ec">
   <meta name="pjax-timeout" content="1000">
   <link rel="sudo-modal" href="/sessions/sudo_modal">
   <meta name="request-id" content="BED6:4D50:538F6BC:855A6BA:58AEAB79" data-pjax-transient>
+=======
+  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6MTU1MTE4MDAzOmM0YzVmNDRhYmRlNGMwNDViYTAxMzliNjAxZWZjNTRkMTBlMmU4NDNlMWRlOTJjNjY3NjA5OGYyYTNjNjhlNGE=--cddcb55aec4b7994a09eb6ec4f5cdb053cfc9ac0">
+  <meta name="pjax-timeout" content="1000">
+  <link rel="sudo-modal" href="/sessions/sudo_modal">
+  <meta name="request-id" content="0438:4D4F:5CA85D1:93FE028:58AEABD0" data-pjax-transient>
+>>>>>>> temp
   
 
   <meta name="selected-link" value="repo_source" data-pjax-transient>
@@ -39,7 +46,11 @@
 <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
     <meta name="google-analytics" content="UA-3769691-2">
 
+<<<<<<< HEAD
 <meta content="collector.githubapp.com" name="octolytics-host" /><meta content="github" name="octolytics-app-id" /><meta content="https://collector.githubapp.com/github-external/browser_event" name="octolytics-event-url" /><meta content="BED6:4D50:538F6BC:855A6BA:58AEAB79" name="octolytics-dimension-request_id" /><meta content="20388810" name="octolytics-actor-id" /><meta content="yokiyokiyoki" name="octolytics-actor-login" /><meta content="ab69c1e1c20388da0b904b493028be7ce14813bf50ce83352cd0c9c1ef4bfa67" name="octolytics-actor-hash" />
+=======
+<meta content="collector.githubapp.com" name="octolytics-host" /><meta content="github" name="octolytics-app-id" /><meta content="https://collector.githubapp.com/github-external/browser_event" name="octolytics-event-url" /><meta content="0438:4D4F:5CA85D1:93FE028:58AEABD0" name="octolytics-dimension-request_id" /><meta content="20388810" name="octolytics-actor-id" /><meta content="yokiyokiyoki" name="octolytics-actor-login" /><meta content="ab69c1e1c20388da0b904b493028be7ce14813bf50ce83352cd0c9c1ef4bfa67" name="octolytics-actor-hash" />
+>>>>>>> temp
 <meta content="/&lt;user-name&gt;/&lt;repo-name&gt;/blob/show" data-pjax-transient="true" name="analytics-location" />
 
 
@@ -52,7 +63,11 @@
   <meta name="user-login" content="yokiyokiyoki">
 
       <meta name="expected-hostname" content="github.com">
+<<<<<<< HEAD
     <meta name="js-proxy-site-detection-payload" content="MzJjZjcyZmExYmZiYTA1MTkzZDQzZDA5ZGI4ZGMwOWExNjMxZDk3NTU5YjZmNWNhY2ZhM2E1NjRiNmNjMDcyZXx7InJlbW90ZV9hZGRyZXNzIjoiMTQuMjMuNjEuMjE4IiwicmVxdWVzdF9pZCI6IkJFRDY6NEQ1MDo1MzhGNkJDOjg1NUE2QkE6NThBRUFCNzkiLCJ0aW1lc3RhbXAiOjE0ODc4NDIxNzgsImhvc3QiOiJnaXRodWIuY29tIn0=">
+=======
+    <meta name="js-proxy-site-detection-payload" content="ZjMxY2UzNGNlOTZjZDM2NmViNzZjMDcwMmZjMmQ3MDZmZTZmMzg5MzAyM2QxNDcxNWMxYTk4Zjg1OGNlZTI3Ynx7InJlbW90ZV9hZGRyZXNzIjoiMTQuMjMuNjEuMjE4IiwicmVxdWVzdF9pZCI6IjA0Mzg6NEQ0Rjo1Q0E4NUQxOjkzRkUwMjg6NThBRUFCRDAiLCJ0aW1lc3RhbXAiOjE0ODc4NDIyNTcsImhvc3QiOiJnaXRodWIuY29tIn0=">
+>>>>>>> temp
 
 
   <meta name="html-safe-nonce" content="3773f2741666eba9e28ce7f21e005fc6d16cf8a3">
@@ -226,7 +241,11 @@
           Settings
         </a>
 
+<<<<<<< HEAD
         <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/logout" class="logout-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="hkKKPDgX+szb3E7HLCwCWzLZam+4Orkb1fsURnVLZ8T9+mwEZooLNBTPd/hFX5+GKwad/sRS9IGTldLz6o0WUg==" /></div>
+=======
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/logout" class="logout-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="3FF0JZo7lhtjMaPfwOMFa1DkQAaVNfC4MgbI9jceUZOn6ZIdxKZn46wimuCpkJi2STu3l+ldvSJ0aA5DqNggBQ==" /></div>
+>>>>>>> temp
           <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout">
             Sign out
           </button>
@@ -235,7 +254,11 @@
   </li>
 </ul>
 
+<<<<<<< HEAD
     <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/logout" class="sr-only" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="X9aYgW0CkqZeBB2CwTDRlGZ8yIE3FZbnrWeJQqjy3Y4kbn65M59jXpEXJL2oQ0xJf6M/EEt9233rCU/3NzSsGA==" /></div>
+=======
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/logout" class="sr-only" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="ZB5luwyup9m7ZYVg2VFBr1rBmsOoaWLrnjMyFj/IDfkfpoODUjNWIXR2vF+wItxyQx5tUtQBL3HYXfSjoA58bw==" /></div>
+>>>>>>> temp
       <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout">
         Sign out
       </button>
@@ -270,7 +293,11 @@
 <ul class="pagehead-actions">
 
   <li>
+<<<<<<< HEAD
         <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/notifications/subscribe" class="js-social-container" data-autosubmit="true" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="dLUkxUQlQ2RWdoDxzx4m6f5/sl66xqzeKTQ/IKK/4L8Ld/WRNo7QmopAylfCMmb9E6cC1cRdNXJU9Akbt6PDmw==" /></div>      <input class="form-control" id="repository_id" name="repository_id" type="hidden" value="82756281" />
+=======
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/notifications/subscribe" class="js-social-container" data-autosubmit="true" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="OjonsDDmKsyLq6KxJUQoGYvVerOKwJISvVuwTyhXqdhF+PbkQk25Mled6BcoaGgNZg3KOPRbC77Am4Z0PUuK/A==" /></div>      <input class="form-control" id="repository_id" name="repository_id" type="hidden" value="82756281" />
+>>>>>>> temp
 
         <div class="select-menu js-menu-container js-select-menu">
           <a href="/yokiyokiyoki/webpack-vue/subscription"
@@ -345,7 +372,11 @@
 
   <li>
       <div class="js-toggler-container js-social-container starring-container ">
+<<<<<<< HEAD
     <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/yokiyokiyoki/webpack-vue/unstar" class="starred" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="7z3VXid1jl9F0VtaGmpCJev73967MtQ9FgGBxG7iYSFL2M28nu6P+v5jP9yPZHdwT5iAivnSm5rXKBjQDLYTcQ==" /></div>
+=======
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/yokiyokiyoki/webpack-vue/unstar" class="starred" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="ye7qjw11/J34D1/FihSMH91W5vpblYNMKcWIuNBsnOhtC/JttO79OEO9O0MfGrlKeTW5rhl1zOvo7BGssjjuuA==" /></div>
+>>>>>>> temp
       <button
         type="submit"
         class="btn btn-sm btn-with-count js-toggler-target"
@@ -359,7 +390,11 @@
           0
         </a>
 </form>
+<<<<<<< HEAD
     <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/yokiyokiyoki/webpack-vue/star" class="unstarred" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="poL0D068PhMyidOUEjsqJ1Lr/RGjZKqloJrzqof+JT8aEiOY808LKJuT5ev++r9BAZ3k6WYmEfh8r9h4ewWeNw==" /></div>
+=======
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/yokiyokiyoki/webpack-vue/star" class="unstarred" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="XPiXAlLMzWnOzTNdpsfNOwVkVT6qRi1xmPIQtYHFjDfgaECV7z/4UmfXBSJKBlhdVhJMxm8ElixExztnfT43Pw==" /></div>
+>>>>>>> temp
       <button
         type="submit"
         class="btn btn-sm btn-with-count js-toggler-target"
@@ -377,7 +412,11 @@
   </li>
 
   <li>
+<<<<<<< HEAD
           <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/yokiyokiyoki/webpack-vue/fork" class="btn-with-count" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="QYSrdTA8p0mungbOk76S9Tt8swsp3oHLqkzmBvKubz2hE2v3fFm1M0ccknuze5P2nmZ7zSYEkqAyDbNDhptAPw==" /></div>
+=======
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/yokiyokiyoki/webpack-vue/fork" class="btn-with-count" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="5fj+17o2/idNBxtHToVVgW7OlkwkcOo19raFgEBn8d0Fbz5V9lPsXaSFj/JuQFSCy9Reiiuq+V5u99DFNFLe3w==" /></div>
+>>>>>>> temp
             <button
                 type="submit"
                 class="btn btn-sm btn-with-count"
@@ -532,7 +571,11 @@
             </a>
         </div>
 
+<<<<<<< HEAD
           <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/yokiyokiyoki/webpack-vue/branches" class="js-create-branch select-menu-item select-menu-new-item-form js-navigation-item js-new-item-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="U6PPZnqPTHG1px8khSp0C4ZT3CC4fJdcbaI8DsrhfKwT6T1Co1uL4wTOzPVDD9jUNH6SY71gzhF9LBT0Pr4pVg==" /></div>
+=======
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/yokiyokiyoki/webpack-vue/branches" class="js-create-branch select-menu-item select-menu-new-item-form js-navigation-item js-new-item-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="7+0xxkgcx5LCGuX/ksBYhXfumjoFsI4WPpg0LP6jthavp8PikcgAAHNzNi5U5fRaxcPUeQCs11suFhzWCvzj7A==" /></div>
+>>>>>>> temp
           <svg aria-hidden="true" class="octicon octicon-git-branch select-menu-item-icon" height="16" version="1.1" viewBox="0 0 10 16" width="10"><path fill-rule="evenodd" d="M10 5c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v.3c-.02.52-.23.98-.63 1.38-.4.4-.86.61-1.38.63-.83.02-1.48.16-2 .45V4.72a1.993 1.993 0 0 0-1-3.72C.88 1 0 1.89 0 3a2 2 0 0 0 1 1.72v6.56c-.59.35-1 .99-1 1.72 0 1.11.89 2 2 2 1.11 0 2-.89 2-2 0-.53-.2-1-.53-1.36.09-.06.48-.41.59-.47.25-.11.56-.17.94-.17 1.05-.05 1.95-.45 2.75-1.25S8.95 7.77 9 6.73h-.02C9.59 6.37 10 5.73 10 5zM2 1.8c.66 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2C1.35 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2zm0 12.41c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm6-8c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
             <div class="select-menu-item-text">
               <span class="select-menu-item-heading">Create branch: <span class="js-new-item-name"></span></span>
@@ -622,12 +665,20 @@
             <svg aria-hidden="true" class="octicon octicon-device-desktop" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M15 2H1c-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h5.34c-.25.61-.86 1.39-2.34 2h8c-1.48-.61-2.09-1.39-2.34-2H15c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm0 9H1V3h14v8z"/></svg>
         </a>
 
+<<<<<<< HEAD
         <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/yokiyokiyoki/webpack-vue/edit/master/README.md" class="inline-form js-update-url-with-hash" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="tijTACj+VjanYIibzEGva2XJMIMuJN8EqXx8H1tsrJ2nkn3en1fWRgsIm1jwv6a+T9w+VQ0VfcbqSSSKsTMAGA==" /></div>
+=======
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/yokiyokiyoki/webpack-vue/edit/master/README.md" class="inline-form js-update-url-with-hash" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="sCDFTQNSTIV6YQK0qy/JIidXoT65kpSDau6IpzwNz8qhmmuTtPvM9dYJEXeX0cD3DUKv6JqjNkEp29Ay1lJjTw==" /></div>
+>>>>>>> temp
           <button class="btn-octicon tooltipped tooltipped-nw" type="submit"
             aria-label="Edit this file" data-hotkey="e" data-disable-with>
             <svg aria-hidden="true" class="octicon octicon-pencil" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M0 12v3h3l8-8-3-3-8 8zm3 2H1v-2h1v1h1v1zm10.3-9.3L12 6 9 3l1.3-1.3a.996.996 0 0 1 1.41 0l1.59 1.59c.39.39.39 1.02 0 1.41z"/></svg>
           </button>
+<<<<<<< HEAD
 </form>        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/yokiyokiyoki/webpack-vue/delete/master/README.md" class="inline-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="q5qmvGHe0c9BhyH8T+NSz63O4SucbcuEwslhGCa9Iz8nx3xAq0B0a3aCUZXsfaFaEW7EU9oKnvZctNn3ee9KQA==" /></div>
+=======
+</form>        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/yokiyokiyoki/webpack-vue/delete/master/README.md" class="inline-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="N5HqXhUKhOmvl63TXVzRH1O/A8UqvLLekW5FFv79T/a7zDCi35QhTZiS3br+wiKK7x8mvWzb56wPE/35oa8miQ==" /></div>
+>>>>>>> temp
           <button class="btn-octicon btn-octicon-danger tooltipped tooltipped-nw" type="submit"
             aria-label="Delete this file" data-disable-with>
             <svg aria-hidden="true" class="octicon octicon-trashcan" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"/></svg>
@@ -684,7 +735,11 @@
       <svg aria-hidden="true" class="octicon octicon-mark-github" height="24" version="1.1" viewBox="0 0 16 16" width="24"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
 </a>
     <ul class="site-footer-links">
+<<<<<<< HEAD
       <li>&copy; 2017 <span title="0.12647s from github-fe151-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+=======
+      <li>&copy; 2017 <span title="0.08056s from github-fe-a93be76.cp1-iad.github.net">GitHub</span>, Inc.</li>
+>>>>>>> temp
         <li><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
         <li><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
         <li><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
