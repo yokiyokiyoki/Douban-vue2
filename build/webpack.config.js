@@ -1,9 +1,13 @@
+const path = require('path');
 module.exports = {
     entry: {
-        app: ['./main.js']
+        app: ['./src/main.js']
     },
     output: {
-        path: __dirname,
+        // 路径是从根目录到根目录下的dist，相当于cd进入
+        path: path.resolve(__dirname, '../dist'),
+        // 静态资源存放目录，可以直接在这里取文件
+        publicPath: '/dist/',
         filename: 'bundle.js'
     },
     module: {
@@ -20,7 +24,11 @@ module.exports = {
             }, {
                 test: /\.(png|jqg)$/,
                 loader: 'url-loader?limit=100000'
+            }, {
+                test: /\.vue$/,
+                loader: 'vue-loader'
             }
         ]
-    }
+    },
+    devtool: 'source-map'
 }
