@@ -1,0 +1,9 @@
+$white:white;
+body {
+    display: flex;
+    background-color: $white;
+}
+
+.img {
+    background-image: url('../img/map.png')
+}

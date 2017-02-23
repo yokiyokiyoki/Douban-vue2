@@ -1,1 +1,2 @@
-import './style/app.css'
+import $ from 'jquery'
+import './style/app.scss'

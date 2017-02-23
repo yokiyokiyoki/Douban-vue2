@@ -1,6 +1,6 @@
 module.exports = {
     entry: {
-        app: ['./main']
+        app: ['./main.js']
     },
     output: {
         path: __dirname,
@@ -8,12 +8,19 @@ module.exports = {
     },
     module: {
         loaders: [{
-            test: /\.js$/,
-            loaders: ['babel?presets[]=es2015'],
-            exclude: /node_modules/
-        }, {
-            test: /\.css$/,
-            loaders: ['style', 'css']
-        }]
+                test: /\.js$/,
+                loaders: ['babel-loader'],
+                exclude: /node_modules/
+            },
+            {
+                test: /\.scss$/,
+                loaders: ['style-loader', 'css-loader',
+                    'autoprefixer-loader', 'sass-loader'
+                ] //2.0不支持缩写
+            }, {
+                test: /\.(png|jqg)$/,
+                loader: 'url-loader?limit=100000'
+            }
+        ]
     }
 }
