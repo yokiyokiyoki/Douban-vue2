@@ -3,14 +3,29 @@
         <tab :line-width=2 active-color='#fc378c' v-model="index">
             <tab-item class="vux-center" :selected="selected === item" v-for="item in list" @click="selected = item">{{item}}</tab-item>
         </tab>
-        <swiper v-model="index" height="100px" :show-dots="false">
+        <swiper v-model="index" height="150px" :show-dots="false">
             <swiper-item v-for="item in listData">
                 <div class="tab-swiper vux-center">
                     <scroller lock-x height="200px" @on-scroll="onScroll" ref="scrollerEvent">
                         <div class="box2">
                             <flexbox orient="vertical">
                                 <flexbox-item>
-                                    <div class="flex-box" v-for="i in item.data.subjects">{{i.title}} / {{i.genres}}</div>
+                                    <div class="flex-box flex-box-num" v-for="i in item.data.subjects">
+                                        <flexbox>
+                                            <flexbox-item :span="4">
+                                                <div class="flex-box">
+                                                    <p>影片名称：{{i.title}}</p>
+                                                    <p>影片类型：{{i.genres}}</p>
+                                                    <p>影片评分：{{i.rating.average}}</p>
+                                                </div>
+                                            </flexbox-item>
+                                            <flexbox-item>
+                                                <div class="flex-box">
+                                                    <img :src="i.images.medium">
+                                                </div>
+                                            </flexbox-item>
+                                        </flexbox>
+                                    </div>
                                 </flexbox-item>
                             </flexbox>
 
@@ -32,7 +47,8 @@
         Card,
         Scroller,
         Flexbox,
-        FlexboxItem
+        FlexboxItem,
+        Divider
     } from 'vux'
     export default {
         components: {
@@ -44,7 +60,8 @@
             Card,
             Scroller,
             Flexbox,
-            FlexboxItem
+            FlexboxItem,
+            Divider
         },
         data() {
             return {
@@ -92,5 +109,11 @@
         background-color: #20b907;
         border-radius: 4px;
         background-clip: padding-box;
+    }
+    
+    .flex-box-num {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
     }
 </style>

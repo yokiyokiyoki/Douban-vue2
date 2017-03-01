@@ -32,7 +32,7 @@
     $white:white;
     #test {
         p {
-            color: $black;
+            color: $white;
         }
     }
 </style>
