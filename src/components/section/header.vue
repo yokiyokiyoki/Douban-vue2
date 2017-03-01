@@ -3,10 +3,10 @@
         <tab :line-width=2 active-color='#fc378c' v-model="index">
             <tab-item class="vux-center" :selected="selected === item" v-for="item in list" @click="selected = item">{{item}}</tab-item>
         </tab>
-        <swiper v-model="index" height="150px" :show-dots="false">
+        <swiper v-model="index" height="100px" :show-dots="false">
             <swiper-item v-for="item in listData">
                 <div class="tab-swiper vux-center">
-                    <scroller lock-x height="200px" @on-scroll="onScroll" ref="scrollerEvent">
+                    <scroller lock-x height="200px" scrollbar-y ref="scroller">
                         <div class="box2">
                             <flexbox orient="vertical">
                                 <flexbox-item>
@@ -28,7 +28,6 @@
                                     </div>
                                 </flexbox-item>
                             </flexbox>
-
                         </div>
                     </scroller>
                 </div>
@@ -48,7 +47,8 @@
         Scroller,
         Flexbox,
         FlexboxItem,
-        Divider
+        Divider,
+        LoadMore
     } from 'vux'
     export default {
         components: {
@@ -61,7 +61,8 @@
             Scroller,
             Flexbox,
             FlexboxItem,
-            Divider
+            Divider,
+            LoadMore
         },
         data() {
             return {
