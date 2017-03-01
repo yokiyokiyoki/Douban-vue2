@@ -3,20 +3,26 @@ const path = require('path');
 const vuxLoader = require('vux-loader')
 let webpackConfig = {
     entry: {
-        app: ['./src/main.js']
+        app: ['./src/main.js'],
+        // 需要打包的第三方插件
+        // vendors: ['jquery']
     },
     output: {
         // 路径是从根目录到根目录下的dist，相当于cd进入
         path: path.resolve(__dirname, '../dist'),
         // 静态资源存放目录，可以直接在这里取文件
         publicPath: '/dist/',
-        filename: 'bundle.js'
+        // 这个name对应的是entry里面的键的名字
+        filename: 'bundle_[name].js'
     },
     module: {
         // 加载各种js，img文件资源
         rules: [{
                 test: /\.js$/,
-                loaders: ['babel-loader'],
+                loaders: 'babel-loader',
+                query: {
+                    presets: ['es2015']
+                },
                 exclude: /node_modules/
             },
             {
@@ -55,6 +61,19 @@ let webpackConfig = {
             'components': path.resolve(__dirname, '../src/components'),
             'img': path.resolve(__dirname, '../src/assets/img/'),
 
+        }
+    },
+    // webpack-dev-sever的配置
+    devServer: {
+        historyApiFallback: true,
+        hot: true,
+        inline: true,
+        proxy: {
+            '/v2/*': {
+                target: 'https://api.douban.com',
+                changeOrigin: true,
+                secure: false
+            }
         }
     }
 }

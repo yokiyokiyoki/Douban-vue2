@@ -3,28 +3,38 @@
         <tab :line-width=2 active-color='#fc378c' v-model="index">
             <tab-item class="vux-center" :selected="selected === item" v-for="item in list" @click="selected = item">{{item}}</tab-item>
         </tab>
-        <swiper v-model="index" height="100px" :show-dots="false">
-            <swiper-item v-for="item in list">
-                <div class="tab-swiper vux-center">我是{{item}}的容器 </div>
+        <swiper v-model="index" height="150px" :show-dots="false">
+            <swiper-item v-for="item in listData">
+                <div class="tab-swiper vux-center">
+                    <scroller lock-x height="200px" @on-scroll="onScroll" ref="scrollerEvent">
+                        <div class="box2">
+                            <flexbox orient="vertical">
+                                <flexbox-item>
+                                    <div class="flex-box flex-box-num" v-for="i in item.data.subjects">
+                                        <flexbox>
+                                            <flexbox-item :span="4">
+                                                <div class="flex-box">
+                                                    <p>影片名称：{{i.title}}</p>
+                                                    <p>影片类型：{{i.genres}}</p>
+                                                    <p>影片评分：{{i.rating.average}}</p>
+                                                </div>
+                                            </flexbox-item>
+                                            <flexbox-item>
+                                                <div class="flex-box">
+                                                    <img :src="i.images.medium">
+                                                </div>
+                                            </flexbox-item>
+                                        </flexbox>
+                                    </div>
+                                </flexbox-item>
+                            </flexbox>
+
+                        </div>
+                    </scroller>
+                </div>
             </swiper-item>
         </swiper>
-        <card :header="{title:'启动特权礼包'}">
-            <div slot="content" class="card-demo-flex card-demo-content01">
-                <div class="vux-1px-l vux-1px-r">
-                    <span>金币*1130</span>
-                    <br/> 签到礼包
-                </div>
-                <div class="vux-1px-r">
-                    <span>结算+3%</span>
-                    <br/> 金币加成
-                </div>
-                <div>
-                    <span>微信身份展示</span>
-                    <br/> 外显特权
-                </div>
 
-            </div>
-        </card>
     </div>
 </template>
 <script>
@@ -34,7 +44,11 @@
         TabItem,
         Swiper,
         SwiperItem,
-        Card
+        Card,
+        Scroller,
+        Flexbox,
+        FlexboxItem,
+        Divider
     } from 'vux'
     export default {
         components: {
@@ -43,57 +57,63 @@
             TabItem,
             Swiper,
             SwiperItem,
-            Card
+            Card,
+            Scroller,
+            Flexbox,
+            FlexboxItem,
+            Divider
         },
         data() {
             return {
-                list: ['美食', '电影', '酒店'],
+                list: ['Top250', '正在热映', '即将上映'],
+                listData: [],
                 index: 0,
-                selected: '美食'
+                selected: '正在热映'
             }
         },
+        mounted() {
+            this.getTopMovie();
+            this.getInMovie();
+            this.getSoonMovie();
+            console.log(this.listData)
+        },
         methods: {
-            showPlugin() {
-                this.$vux.alert.show({
-                    title: 'Yoki is Cool',
-                    content: this.$t('你同意吗?'),
-                    onShow() {
-                        console.log('显示')
-                    },
-                    onHide() {
-                        console.log('隐藏')
-                    }
+            getTopMovie: function () {
+                var self = this;
+                this.$http.get('/v2/movie/top250').then(function (res) {
+                    self.listData[0] = res
                 })
             },
-            showPluginAuto() {
-                this.showPlugin()
-                setTimeout(() => {
-                    this.$vux.alert.hide()
-                }, 3000)
-            }
+            getInMovie: function () {
+                var self = this;
+                this.$http.get('/v2/movie/in_theaters').then(function (res) {
+                    self.listData[1] = res
+                })
+            },
+            getSoonMovie: function () {
+                var self = this;
+                this.$http.get('/v2/movie/coming_soon').then(function (res) {
+                    self.listData[2] = res
+                })
+            },
+            onScroll(pos) {
+                this.scrollTop = pos.top
+            },
         }
     }
 </script>
 <style lang="sass">
-    .card-demo-flex {
-        display: flex;
-    }
-    
-    .card-demo-content01 {
-        padding: 10px 0;
-    }
-    
-    .card-padding {
-        padding: 15px;
-    }
-    
-    .card-demo-flex>div {
-        flex: 1;
+    .flex-box {
         text-align: center;
-        font-size: 12px;
+        color: #fff;
+        background-color: #20b907;
+        border-radius: 4px;
+        background-clip: padding-box;
     }
     
-    .card-demo-flex span {
-        color: #f74c31;
+    .flex-box-num {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
     }
 </style>
