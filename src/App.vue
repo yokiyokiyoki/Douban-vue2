@@ -2,7 +2,6 @@
     <div id="test">
         <x-header>Yoki</x-header>
         <section-header></section-header>
-        <p>hi{{msg}}</p>
         <!--路由链接-->
 
         <!--路由出口-->
@@ -21,7 +20,7 @@
         },
         data() {
             return {
-                msg: 'yoki'
+
             }
         }
     }
