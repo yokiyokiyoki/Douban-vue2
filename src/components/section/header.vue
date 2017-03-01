@@ -57,8 +57,8 @@
         },
         methods: {
             getBook: function () {
-                this.$http.get('https://api.douban.com/v2/book/1220562').then(function (res) {
-                    console.log(res)
+                this.$http.get('/v2/movie/top250').then(function (res) {
+                    console.log(res.data)
                 })
             }
         }
