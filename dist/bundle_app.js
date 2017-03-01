@@ -32089,7 +32089,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             //     self.listData[0] = res
             // })
             $.ajax({
-                url: 'http://api.douban.com/v2/movie/top250',
+                url: 'https://api.douban.com/v2/movie/top250',
                 dataType: 'jsonp',
                 type: 'get',
                 success: function (res) {
@@ -32104,7 +32104,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             //     self.listData[1] = res
             // })
             $.ajax({
-                url: 'http://api.douban.com/v2/movie/in_theaters',
+                url: 'https://api.douban.com/v2/movie/in_theaters',
                 dataType: 'jsonp',
                 type: 'get',
                 success: function (res) {
@@ -32119,7 +32119,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             //     self.listData[2] = res
             // })
             $.ajax({
-                url: 'http://api.douban.com/v2/movie/coming_soon',
+                url: 'https://api.douban.com/v2/movie/coming_soon',
                 dataType: 'jsonp',
                 type: 'get',
                 success: function (res) {
