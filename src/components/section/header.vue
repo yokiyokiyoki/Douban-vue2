@@ -10,7 +10,7 @@
                         <div class="box2">
                             <flexbox orient="vertical">
                                 <flexbox-item>
-                                    <div class="flex-box flex-box-num" v-for="i in item.data.subjects">
+                                    <div class="flex-box flex-box-num" v-for="i in item.subjects">
                                         <flexbox>
                                             <flexbox-item :span="4">
                                                 <div class="flex-box">
@@ -66,7 +66,7 @@
         data() {
             return {
                 list: ['Top250', '正在热映', '即将上映'],
-                listData: [],
+                listData: [{}, {}, {}],
                 index: 0,
                 selected: '正在热映'
             }
@@ -75,25 +75,51 @@
             this.getTopMovie();
             this.getInMovie();
             this.getSoonMovie();
-            console.log(this.listData)
         },
         methods: {
             getTopMovie: function () {
                 var self = this;
-                this.$http.get('/v2/movie/top250').then(function (res) {
-                    self.listData[0] = res
+                // axios没有jsonp，无法在GitHub pages上跨豆瓣的域
+                // this.$http.get('/v2/movie/top250').then(function (res) {
+                //     self.listData[0] = res
+                // })
+                $.ajax({
+                    url: 'http://api.douban.com/v2/movie/top250',
+                    dataType: 'jsonp',
+                    type: 'get',
+                    success: function (res) {
+                        self.listData[0] = res
+                    }
                 })
             },
             getInMovie: function () {
                 var self = this;
-                this.$http.get('/v2/movie/in_theaters').then(function (res) {
-                    self.listData[1] = res
+                // axios没有jsonp，无法在GitHub pages上跨豆瓣的域
+                // this.$http.get('/v2/movie/in_theaters').then(function (res) {
+                //     self.listData[1] = res
+                // })
+                $.ajax({
+                    url: 'http://api.douban.com/v2/movie/in_theaters',
+                    dataType: 'jsonp',
+                    type: 'get',
+                    success: function (res) {
+                        self.listData[1] = res
+                    }
                 })
             },
             getSoonMovie: function () {
                 var self = this;
-                this.$http.get('/v2/movie/coming_soon').then(function (res) {
-                    self.listData[2] = res
+                // axios没有jsonp，无法在GitHub pages上跨豆瓣的域
+                // this.$http.get('/v2/movie/coming_soon').then(function (res) {
+                //     self.listData[2] = res
+                // })
+                $.ajax({
+                    url: 'http://api.douban.com/v2/movie/coming_soon',
+                    dataType: 'jsonp',
+                    type: 'get',
+                    success: function (res) {
+                        self.listData[2] = res
+                    }
                 })
             },
             onScroll(pos) {
