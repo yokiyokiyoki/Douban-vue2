@@ -47,29 +47,19 @@
         },
         data() {
             return {
-                list: ['美食', '电影', '酒店'],
+                list: ['读书', '电影', '音乐'],
                 index: 0,
                 selected: '美食'
             }
         },
+        mounted() {
+            this.getBook();
+        },
         methods: {
-            showPlugin() {
-                this.$vux.alert.show({
-                    title: 'Yoki is Cool',
-                    content: this.$t('你同意吗?'),
-                    onShow() {
-                        console.log('显示')
-                    },
-                    onHide() {
-                        console.log('隐藏')
-                    }
+            getBook: function () {
+                this.$http.get('https://api.douban.com/v2/book/1220562').then(function (res) {
+                    console.log(res)
                 })
-            },
-            showPluginAuto() {
-                this.showPlugin()
-                setTimeout(() => {
-                    this.$vux.alert.hide()
-                }, 3000)
             }
         }
     }
