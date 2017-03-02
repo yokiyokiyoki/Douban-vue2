@@ -31644,8 +31644,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         Spinner: __WEBPACK_IMPORTED_MODULE_2_vux_src_components_spinner_index_vue___default.a
     },
     mounted() {
-        // this.getTopMovie();
-        // this.getInMovie();
+        this.getTopMovie();
+        this.getInMovie();
         this.getSoonMovie();
     },
     methods: {
@@ -31745,9 +31745,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         Spinner: __WEBPACK_IMPORTED_MODULE_2_vux_src_components_spinner_index_vue___default.a
     },
     mounted() {
-        // this.getTopMovie();
+        this.getTopMovie();
         this.getInMovie();
-        // this.getSoonMovie();
+        this.getSoonMovie();
     },
     methods: {
         getTopMovie: function () {
@@ -32080,11 +32080,11 @@ var routes = [{
     alias: '/view/top250'
 }, {
     path: '/viewIn',
-    component: _top2.default,
+    component: _in2.default,
     alias: '/view/in_theaters'
 }, {
     path: '/viewCome',
-    component: _top2.default,
+    component: _come2.default,
     alias: '/view/coming_soon'
 }];
 // 创建一个路由器实例
