@@ -1,19 +1,17 @@
 <template>
     <div class="container">
-        <header-title></header-title>
-        
-        
+        <section-header></section-header>
         <!--路由链接-->
 
         <!--路由出口-->
-         <router-view></router-view>
+        <!-- <router-view></router-view> -->
         
     </div>
 </template>
 <script>
     
-    import SectionHeader from './components/section/index.vue';
-    import headerTitle from './components/header/index.vue'
+    import SectionHeader from 'components/section/index.vue';
+    import headerTitle from 'components/header/index.vue'
     export default {
         components: {
             headerTitle,
