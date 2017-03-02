@@ -45,8 +45,8 @@
             Spinner
         },
         mounted() {
-            // this.getTopMovie();
-            // this.getInMovie();
+            this.getTopMovie();
+            this.getInMovie();
             this.getSoonMovie();
         },
         methods:{

@@ -18,12 +18,12 @@ const routes = [{
     },
     {
         path: '/viewIn',
-        component: viewTop,
+        component: viewIn,
         alias: '/view/in_theaters'
     },
     {
         path: '/viewCome',
-        component: viewTop,
+        component: viewCome,
         alias: '/view/coming_soon'
     }
 ]
