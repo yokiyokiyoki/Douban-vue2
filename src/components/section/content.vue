@@ -68,6 +68,7 @@
             }
         },
         computed:{
+            // main.js里面注入store后，可以在子组件使用this.$store
             listData(){
                 return this.$store.state.listData;
             },
@@ -136,6 +137,7 @@
                 justify-content: center;
                 align-items:center;
                 flex-direction:column;
+                height:190px;
                 p{
                     font-size:12px;
                 }
