@@ -11,8 +11,10 @@
                     </div>
                     <div class="content clearfix" v-show="comeComplete">
                         <div v-for="item in listData[2]" class="block">
-                            <img :src="item.images.medium">
-                            <p>{{item.title}}</p> 
+                            <router-link :to="{name:'detail',params:{id:item.id}}">
+                                <img :src="item.images.medium">
+                                <p>{{item.title}}</p>
+                            </router-link>  
                         </div>
                     </div>
                 </section>

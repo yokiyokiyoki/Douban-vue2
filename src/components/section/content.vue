@@ -10,8 +10,10 @@
             </div>
             <div class="content clearfix" v-show="topComplete">
                 <div v-for="item in sliceListData[0]" class="block">
-                    <img :src="item.images.medium">
-                    <p>{{item.title}}</p> 
+                    <router-link :to="{name:'detail',params:{id:item.id}}">
+                        <img :src="item.images.medium">
+                        <p>{{item.title}}</p>
+                    </router-link> 
                 </div>
             </div>
         </section>
@@ -25,8 +27,10 @@
             </div>
             <div class="content clearfix" v-show="inComplete">
                 <div v-for="item in sliceListData[1]" class="block">
-                    <img :src="item.images.medium">
-                    <p>{{item.title}}</p> 
+                    <router-link :to="{name:'detail',params:{id:item.id}}">
+                        <img :src="item.images.medium">
+                        <p>{{item.title}}</p>
+                    </router-link>  
                 </div>
             </div>
         </section>
@@ -40,8 +44,10 @@
             </div>
             <div class="content clearfix" v-show="comeComplete">
                 <div v-for="item in sliceListData[2]" class="block">
-                    <img :src="item.images.medium">
-                    <p>{{item.title}}</p> 
+                    <router-link :to="{name:'detail',params:{id:item.id}}">
+                        <img :src="item.images.medium">
+                        <p>{{item.title}}</p>
+                    </router-link>     
                 </div>
             </div>
         </section>
@@ -54,17 +60,9 @@
     export default{
         data(){
             return{
-                list: ['Top250', '正在热映', '即将上映'],
-                // listData: [{}, {}, {}],
-                // sliceListData:[{},{},{}],
+                list: ['Top250', '正在热映', '即将上映'],               
                 index: 0,
                 selected: '正在热映',
-                // topComplete:false,
-                // topSpinner:true,
-                // inComplete:false,
-                // inSpinner:true,
-                // comeComplete:false,
-                // comeSpinner:true
             }
         },
         computed:{
@@ -103,7 +101,6 @@
             this.$store.dispatch('getTopMovie');
             this.$store.dispatch('getInMovie');
             this.$store.dispatch('getSoonMovie');
-            console.log(this.$store.state.inSpinner)
         },
         methods:{
             

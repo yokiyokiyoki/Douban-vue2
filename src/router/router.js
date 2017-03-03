@@ -30,9 +30,9 @@ const routes = [
         alias: '/view/coming_soon'
     },
     {
-        path: '/viewDetail',
+        path: '/viewDetail/:id',
         component: viewDetail,
-        alias: '/view/detail'
+        name: 'detail'
     }
 ]
 // 创建一个路由器实例
