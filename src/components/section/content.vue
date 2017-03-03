@@ -137,7 +137,7 @@
                 justify-content: center;
                 align-items:center;
                 flex-direction:column;
-                height:190px;
+                height:200px;
                 p{
                     font-size:12px;
                 }
