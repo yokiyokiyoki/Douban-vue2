@@ -26,17 +26,7 @@
     export default{
         data(){
             return{
-                list: ['Top250', '正在热映', '即将上映'],
-                listData: [{}, {}, {}],
-                sliceListData:[{},{},{}],
-                index: 0,
-                selected: '正在热映',
-                topComplete:false,
-                topSpinner:true,
-                inComplete:false,
-                inSpinner:true,
-                comeComplete:false,
-                comeSpinner:true
+                list: ['Top250', '正在热映', '即将上映']
             }
         },
         components:{
@@ -45,65 +35,25 @@
             Spinner
         },
         mounted() {
-            this.getTopMovie();
-            // this.getInMovie();
-            // this.getSoonMovie();
+            
         },
         methods:{
-            getTopMovie: function () {
-                var self = this;
-                // axios没有jsonp，无法在GitHub pages上跨豆瓣的域
-                // this.$http.get('/v2/movie/top250').then(function (res) {
-                //     self.listData[0] = res
-                // })
-                $.ajax({
-                    url: 'https://api.douban.com/v2/movie/top250',
-                    dataType: 'jsonp',
-                    type: 'get',
-                    success: function (res) {
-                        self.listData[0] = res.subjects;
-                        self.sliceListData[0] = res.subjects.slice(0,6);
-                        self.topComplete=true;
-                        self.topSpinner=false;
-                    }
-                })
+            
+        },
+        computed:{
+            listData(){
+                return this.$store.state.listData;
             },
-            getInMovie: function () {
-                var self = this;
-                // axios没有jsonp，无法在GitHub pages上跨豆瓣的域
-                // this.$http.get('/v2/movie/in_theaters').then(function (res) {
-                //     self.listData[1] = res
-                // })
-                $.ajax({
-                    url: 'https://api.douban.com/v2/movie/in_theaters',
-                    dataType: 'jsonp',
-                    type: 'get',
-                    success: function (res) {
-                        self.listData[1] = res.subjects;
-                        self.sliceListData[1] = res.subjects.slice(0,6);
-                        self.inComplete=true;
-                        self.inSpinner=false;
-                    }
-                })
+            sliceListData(){
+                return this.$store.state.sliceListData;
             },
-            getSoonMovie: function () {
-                var self = this;
-                // axios没有jsonp，无法在GitHub pages上跨豆瓣的域
-                // this.$http.get('/v2/movie/coming_soon').then(function (res) {
-                //     self.listData[2] = res
-                // })
-                $.ajax({
-                    url: 'https://api.douban.com/v2/movie/coming_soon',
-                    dataType: 'jsonp',
-                    type: 'get',
-                    success: function (res) {
-                        self.listData[2] = res.subjects;
-                        self.sliceListData[2] = res.subjects.slice(0,6);
-                        self.comeComplete=true;
-                        self.comeSpinner=false;
-                    }
-                })
+            topComplete(){
+                return this.$store.state.topComplete;
             },
+            topSpinner(){
+                return this.$store.state.topSpinner;
+            }
+            
         }
     }
 </script>

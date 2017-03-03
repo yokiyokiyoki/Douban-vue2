@@ -55,81 +55,57 @@
         data(){
             return{
                 list: ['Top250', '正在热映', '即将上映'],
-                listData: [{}, {}, {}],
-                sliceListData:[{},{},{}],
+                // listData: [{}, {}, {}],
+                // sliceListData:[{},{},{}],
                 index: 0,
                 selected: '正在热映',
-                topComplete:false,
-                topSpinner:true,
-                inComplete:false,
-                inSpinner:true,
-                comeComplete:false,
-                comeSpinner:true
+                // topComplete:false,
+                // topSpinner:true,
+                // inComplete:false,
+                // inSpinner:true,
+                // comeComplete:false,
+                // comeSpinner:true
             }
+        },
+        computed:{
+            listData(){
+                return this.$store.state.listData;
+            },
+            sliceListData(){
+                return this.$store.state.sliceListData;
+            },
+            topComplete(){
+                return this.$store.state.topComplete;
+            },
+            topSpinner(){
+                return this.$store.state.topSpinner;
+            },
+            inComplete(){
+                return this.$store.state.inComplete;
+            },
+            inSpinner(){
+                return this.$store.state.inSpinner;
+            },
+            comeComplete(){
+                return this.$store.state.comeComplete;
+            },
+            comeSpinner(){
+                return this.$store.state.comeSpinner;
+            },
         },
         components:{
             Spinner
         },
         mounted() {
-            this.getTopMovie();
-            this.getInMovie();
-            this.getSoonMovie();
+            // 通过dispatch触发store里的异步action
+            // 在这里初始化store数据，后面的数据引入，省去多次请求
+            this.$store.dispatch('getTopMovie');
+            this.$store.dispatch('getInMovie');
+            this.$store.dispatch('getSoonMovie');
+            console.log(this.$store.state.inSpinner)
         },
         methods:{
-            getTopMovie: function () {
-                var self = this;
-                // axios没有jsonp，无法在GitHub pages上跨豆瓣的域
-                // this.$http.get('/v2/movie/top250').then(function (res) {
-                //     self.listData[0] = res
-                // })
-                $.ajax({
-                    url: 'https://api.douban.com/v2/movie/top250',
-                    dataType: 'jsonp',
-                    type: 'get',
-                    success: function (res) {
-                        self.listData[0] = res.subjects;
-                        self.sliceListData[0] = res.subjects.slice(0,6);
-                        self.topComplete=true;
-                        self.topSpinner=false;
-                    }
-                })
-            },
-            getInMovie: function () {
-                var self = this;
-                // axios没有jsonp，无法在GitHub pages上跨豆瓣的域
-                // this.$http.get('/v2/movie/in_theaters').then(function (res) {
-                //     self.listData[1] = res
-                // })
-                $.ajax({
-                    url: 'https://api.douban.com/v2/movie/in_theaters',
-                    dataType: 'jsonp',
-                    type: 'get',
-                    success: function (res) {
-                        self.listData[1] = res.subjects;
-                        self.sliceListData[1] = res.subjects.slice(0,6);
-                        self.inComplete=true;
-                        self.inSpinner=false;
-                    }
-                })
-            },
-            getSoonMovie: function () {
-                var self = this;
-                // axios没有jsonp，无法在GitHub pages上跨豆瓣的域
-                // this.$http.get('/v2/movie/coming_soon').then(function (res) {
-                //     self.listData[2] = res
-                // })
-                $.ajax({
-                    url: 'https://api.douban.com/v2/movie/coming_soon',
-                    dataType: 'jsonp',
-                    type: 'get',
-                    success: function (res) {
-                        self.listData[2] = res.subjects;
-                        self.sliceListData[2] = res.subjects.slice(0,6);
-                        self.comeComplete=true;
-                        self.comeSpinner=false;
-                    }
-                })
-            },
+            
         }
     }
 </script>
