@@ -33021,7 +33021,6 @@ var store = new _vuex2.default.Store({
                 success: function success(res) {
                     var payload = {};
                     payload.data = res.subjects;
-
                     payload.comeComplete = true;
                     payload.comeSpinner = false;
                     commit('getSoonMovie', payload);

@@ -98,7 +98,6 @@ const store = new Vuex.Store({
                 success: function (res) {
                     let payload = {};
                     payload.data = res.subjects;
-
                     payload.comeComplete = true;
                     payload.comeSpinner = false;
                     commit('getSoonMovie', payload)
