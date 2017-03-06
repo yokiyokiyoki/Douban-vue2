@@ -14697,7 +14697,7 @@ exports = module.exports = __webpack_require__(2)();
 
 
 // module
-exports.push([module.i, "", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"detail.vue","sourceRoot":"webpack://"}]);
+exports.push([module.i, "\n.spinner {\n  height: 300px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n.block {\n  flex-direction: column;\n}\n.block p {\n    font-size: 14px;\n}\n", "", {"version":3,"sources":["/./src/components/pages/detail.vue"],"names":[],"mappings":";AAAA;EACE,cAAc;EACd,cAAc;EACd,wBAAwB;EACxB,oBAAoB;CAAE;AAExB;EACE,uBAAuB;CAAE;AACzB;IACE,gBAAgB;CAAE","file":"detail.vue","sourcesContent":[".spinner {\n  height: 300px;\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n\n.block {\n  flex-direction: column; }\n  .block p {\n    font-size: 14px; }\n"],"sourceRoot":"webpack://"}]);
 
 // exports
 
@@ -14767,7 +14767,7 @@ exports = module.exports = __webpack_require__(2)();
 
 
 // module
-exports.push([module.i, "\n.sectionContent {\n  margin-top: 10px;\n}\n.sectionContent .title .title-left {\n    float: left;\n}\n.sectionContent .title .view-more {\n    float: right;\n}\n.sectionContent .spinner {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    height: 300px;\n}\n.sectionContent .content {\n    width: 100%;\n    margin-top: 10px;\n}\n.sectionContent .content .block {\n      float: left;\n      width: 33%;\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      flex-direction: column;\n      height: 200px;\n}\n.sectionContent .content .block p {\n        font-size: 12px;\n}\n", "", {"version":3,"sources":["/./src/components/section/content.vue"],"names":[],"mappings":";AAAA;EACE,iBAAiB;CAAE;AACnB;IACE,YAAY;CAAE;AAChB;IACE,aAAa;CAAE;AACjB;IACE,cAAc;IACd,wBAAwB;IACxB,oBAAoB;IACpB,cAAc;CAAE;AAClB;IACE,YAAY;IACZ,iBAAiB;CAAE;AACnB;MACE,YAAY;MACZ,WAAW;MACX,cAAc;MACd,wBAAwB;MACxB,oBAAoB;MACpB,uBAAuB;MACvB,cAAc;CAAE;AAChB;QACE,gBAAgB;CAAE","file":"content.vue","sourcesContent":[".sectionContent {\n  margin-top: 10px; }\n  .sectionContent .title .title-left {\n    float: left; }\n  .sectionContent .title .view-more {\n    float: right; }\n  .sectionContent .spinner {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    height: 300px; }\n  .sectionContent .content {\n    width: 100%;\n    margin-top: 10px; }\n    .sectionContent .content .block {\n      float: left;\n      width: 33%;\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      flex-direction: column;\n      height: 200px; }\n      .sectionContent .content .block p {\n        font-size: 12px; }\n"],"sourceRoot":"webpack://"}]);
+exports.push([module.i, "\n.sectionContent {\n  margin-top: 10px;\n}\n.sectionContent .title .title-left {\n    float: left;\n}\n.sectionContent .title .view-more {\n    float: right;\n}\n.sectionContent .spinner {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    height: 300px;\n}\n.sectionContent .content {\n    width: 100%;\n    margin-top: 10px;\n}\n.sectionContent .content .block {\n      float: left;\n      width: 33%;\n      flex-direction: column;\n      height: 200px;\n}\n.sectionContent .content .block p {\n        font-size: 12px;\n}\n", "", {"version":3,"sources":["/./src/components/section/content.vue"],"names":[],"mappings":";AAAA;EACE,iBAAiB;CAAE;AACnB;IACE,YAAY;CAAE;AAChB;IACE,aAAa;CAAE;AACjB;IACE,cAAc;IACd,wBAAwB;IACxB,oBAAoB;IACpB,cAAc;CAAE;AAClB;IACE,YAAY;IACZ,iBAAiB;CAAE;AACnB;MACE,YAAY;MACZ,WAAW;MACX,uBAAuB;MACvB,cAAc;CAAE;AAChB;QACE,gBAAgB;CAAE","file":"content.vue","sourcesContent":[".sectionContent {\n  margin-top: 10px; }\n  .sectionContent .title .title-left {\n    float: left; }\n  .sectionContent .title .view-more {\n    float: right; }\n  .sectionContent .spinner {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    height: 300px; }\n  .sectionContent .content {\n    width: 100%;\n    margin-top: 10px; }\n    .sectionContent .content .block {\n      float: left;\n      width: 33%;\n      flex-direction: column;\n      height: 200px; }\n      .sectionContent .content .block p {\n        font-size: 12px; }\n"],"sourceRoot":"webpack://"}]);
 
 // exports
 
@@ -14781,7 +14781,7 @@ exports = module.exports = __webpack_require__(2)();
 
 
 // module
-exports.push([module.i, "\n@charset \"UTF-8\";\n/*可以使用变量*/\n.container {\n  /*全局字体*/\n  font-family: \"Microsoft YaHei\", 微软雅黑, Arial, Helvetica, HelveticaNeue, \"Helvetica Neue\" !important;\n}\na {\n  text-decoration: none;\n  color: black;\n}\n\n/*全局浮动*/\n.clearfix:after, .clearfix:before {\n  content: '';\n  display: table;\n  visibility: hidden;\n  height: 0;\n  width: 0;\n  line-height: 0;\n}\n.clearfix:after {\n  clear: both;\n}\n.clearfix {\n  zoom: 1;\n  *zoom: 1;\n}\n", "", {"version":3,"sources":["/./src/App.vue"],"names":[],"mappings":";AAAA,iBAAiB;AACjB,UAAU;AACV;EACE,QAAQ;EACR,mGAAmG;CAAE;AAEvG;EACE,sBAAsB;EACtB,aAAa;CAAE;;AAEjB,QAAQ;AACR;EACE,YAAY;EACZ,eAAe;EACf,mBAAmB;EACnB,UAAU;EACV,SAAS;EACT,eAAe;CAAE;AAEnB;EACE,YAAY;CAAE;AAEhB;EACE,QAAQ;GAGR,QAFS;CAAE","file":"App.vue","sourcesContent":["@charset \"UTF-8\";\n/*可以使用变量*/\n.container {\n  /*全局字体*/\n  font-family: \"Microsoft YaHei\", 微软雅黑, Arial, Helvetica, HelveticaNeue, \"Helvetica Neue\" !important; }\n\na {\n  text-decoration: none;\n  color: black; }\n\n/*全局浮动*/\n.clearfix:after, .clearfix:before {\n  content: '';\n  display: table;\n  visibility: hidden;\n  height: 0;\n  width: 0;\n  line-height: 0; }\n\n.clearfix:after {\n  clear: both; }\n\n.clearfix {\n  zoom: 1;\n  *zoom: 1; }\n"],"sourceRoot":"webpack://"}]);
+exports.push([module.i, "\n@charset \"UTF-8\";\n/*可以使用变量*/\n.container {\n  /*全局字体*/\n  font-family: \"Microsoft YaHei\", 微软雅黑, Arial, Helvetica, HelveticaNeue, \"Helvetica Neue\" !important;\n}\na {\n  text-decoration: none;\n  color: black;\n}\n\n/*全局浮动*/\n.clearfix:after, .clearfix:before {\n  content: '';\n  display: table;\n  visibility: hidden;\n  height: 0;\n  width: 0;\n  line-height: 0;\n}\n.clearfix:after {\n  clear: both;\n}\n.clearfix {\n  zoom: 1;\n  *zoom: 1;\n}\n\n/*全局居中*/\n.flex-center {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n", "", {"version":3,"sources":["/./src/App.vue"],"names":[],"mappings":";AAAA,iBAAiB;AACjB,UAAU;AACV;EACE,QAAQ;EACR,mGAAmG;CAAE;AAEvG;EACE,sBAAsB;EACtB,aAAa;CAAE;;AAEjB,QAAQ;AACR;EACE,YAAY;EACZ,eAAe;EACf,mBAAmB;EACnB,UAAU;EACV,SAAS;EACT,eAAe;CAAE;AAEnB;EACE,YAAY;CAAE;AAEhB;EACE,QAAQ;GAGR,QAFS;CAAE;;AAEb,QAAQ;AACR;EACE,cAAc;EACd,wBAAwB;EACxB,oBAAoB;CAAE","file":"App.vue","sourcesContent":["@charset \"UTF-8\";\n/*可以使用变量*/\n.container {\n  /*全局字体*/\n  font-family: \"Microsoft YaHei\", 微软雅黑, Arial, Helvetica, HelveticaNeue, \"Helvetica Neue\" !important; }\n\na {\n  text-decoration: none;\n  color: black; }\n\n/*全局浮动*/\n.clearfix:after, .clearfix:before {\n  content: '';\n  display: table;\n  visibility: hidden;\n  height: 0;\n  width: 0;\n  line-height: 0; }\n\n.clearfix:after {\n  clear: both; }\n\n.clearfix {\n  zoom: 1;\n  *zoom: 1; }\n\n/*全局居中*/\n.flex-center {\n  display: flex;\n  justify-content: center;\n  align-items: center; }\n"],"sourceRoot":"webpack://"}]);
 
 // exports
 
@@ -14878,8 +14878,18 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }],
     staticClass: "content clearfix"
   }, [_c('div', {
-    staticClass: "block"
-  }, [_c('p', [_vm._v(_vm._s(_vm.detailData.countries))]), _vm._v(" "), _c('p', [_vm._v(_vm._s(_vm.detailData.title))]), _vm._v(" "), _c('p', [_vm._v(_vm._s(_vm.detailData.genres))]), _vm._v(" "), _c('p', [_vm._v(_vm._s(_vm.detailData.summary))])])])])
+    staticClass: "block flex-center"
+  }, [_c('h4', [_vm._v(_vm._s(_vm.detailData.title) + " " + _vm._s(_vm.detailData.douban_site))]), _vm._v(" "), _c('img', {
+    attrs: {
+      "src": _vm.detailData.img
+    }
+  }), _vm._v(" "), _c('h4', [_vm._v("导演")]), _vm._v(" "), _vm._l((_vm.detailData.directors), function(directors) {
+    return _c('p', [_vm._v(_vm._s(directors.name))])
+  }), _vm._v(" "), _c('h4', [_vm._v("制片国家/地区")]), _vm._v(" "), _vm._l((_vm.detailData.countries), function(country) {
+    return _c('p', [_vm._v(_vm._s(country))])
+  }), _vm._v(" "), _c('h4', [_vm._v("类型")]), _vm._v(" "), _vm._l((_vm.detailData.genres), function(genres) {
+    return _c('p', [_vm._v(_vm._s(genres))])
+  }), _vm._v(" "), _c('h4', [_vm._v(_vm._s(_vm.detailData.title) + "的剧情介绍")]), _vm._v(" "), _c('p', [_vm._v(_vm._s(_vm.detailData.summary))]), _vm._v(" "), _c('h4', [_vm._v("影片评分")]), _vm._v(" "), _c('p', [_vm._v(_vm._s(_vm.detailData.average))])], 2)])])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
@@ -15177,7 +15187,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "content clearfix"
   }, _vm._l((_vm.sliceListData[2]), function(item) {
     return _c('div', {
-      staticClass: "block"
+      staticClass: "block flex-center"
     }, [_c('router-link', {
       attrs: {
         "to": {
@@ -32624,10 +32634,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             detailData: {}
         };
     },
+    created() {
+        this.getDetail();
+    },
     mounted() {
         console.log(this.$route.params);
-
-        this.getDetail();
     },
     methods: {
         getDetail: function () {
@@ -32638,9 +32649,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 type: 'get',
                 success: function (res) {
                     self.detailData = res;
+                    // 强行赋值给一个属性,发现两个嵌套属性在模板里会找不到
+                    self.detailData.img = res.images.large;
+                    self.detailData.average = res.rating.average;
+                    self.detailData.directors = res.directors;
                     self.complete = true;
                     self.loading = false;
-                    console.log(res);
                 }
             });
         }
