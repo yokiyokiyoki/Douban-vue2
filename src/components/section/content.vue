@@ -43,7 +43,7 @@
                 <spinner></spinner>
             </div>
             <div class="content clearfix" v-show="comeComplete">
-                <div v-for="item in sliceListData[2]" class="block">
+                <div v-for="item in sliceListData[2]" class="block flex-center">
                     <router-link :to="{name:'detail',params:{id:item.id}}">
                         <img :src="item.images.medium">
                         <p>{{item.title}}</p>
@@ -130,9 +130,7 @@
             .block{
                 float:left;
                 width:33%;
-                display:flex;
-                justify-content: center;
-                align-items:center;
+                
                 flex-direction:column;
                 height:200px;
                 p{

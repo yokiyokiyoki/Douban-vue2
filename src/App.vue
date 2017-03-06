@@ -57,5 +57,10 @@
         zoom: 1;
         *zoom: 1;
     }
-
+    /*全局居中*/
+    .flex-center{
+        display:flex;
+        justify-content: center;
+        align-items:center;
+    }
 </style>
