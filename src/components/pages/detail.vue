@@ -5,7 +5,7 @@
         </div>
         <div class="content clearfix" v-show="complete">
             <div class="block flex-center">
-                <h4>{{detailData.title}} {{detailData.douban_site}}</h4>
+                <h4>{{detailData.title}}</h4>
                 <img :src="detailData.img">
                 <h4>导演</h4>
                 <p v-for="directors in detailData.directors">{{directors.name}}</p>

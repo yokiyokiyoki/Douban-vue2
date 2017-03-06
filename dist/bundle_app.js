@@ -14879,7 +14879,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "content clearfix"
   }, [_c('div', {
     staticClass: "block flex-center"
-  }, [_c('h4', [_vm._v(_vm._s(_vm.detailData.title) + " " + _vm._s(_vm.detailData.douban_site))]), _vm._v(" "), _c('img', {
+  }, [_c('h4', [_vm._v(_vm._s(_vm.detailData.title))]), _vm._v(" "), _c('img', {
     attrs: {
       "src": _vm.detailData.img
     }
