@@ -34,7 +34,8 @@ let webpackConfig = {
                 test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
                 loader: 'url-loader',
                 query: {
-                    limit: 10000
+                    limit: 10000,
+                    name: 'img/[name].[hash:7].[ext]' // 将图片都放入img文件夹下，[hash:7]防缓存
                 }
             }, {
                 test: /\.vue$/,
@@ -46,6 +47,7 @@ let webpackConfig = {
                 loader: 'url-loader',
                 query: {
                     limit: 10000,
+                    name: 'fonts/[name].[hash:7].[ext]' // 将字体放入fonts文件夹下
                 }
             }
         ]

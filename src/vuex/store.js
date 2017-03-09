@@ -54,7 +54,6 @@ const store = new Vuex.Store({
                 success: function (res) {
                     let payload = {};
                     payload.data = res.subjects;
-
                     payload.topComplete = true;
                     payload.topSpinner = false;
                     commit('getTopMovie', payload)

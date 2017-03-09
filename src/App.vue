@@ -1,10 +1,7 @@
 <template>
     <div class="container">
         <header-title></header-title>
-        
-        
         <!--路由链接-->
-
         <!--路由出口-->
         <transition>
             <router-view></router-view>
@@ -12,20 +9,19 @@
     </div>
 </template>
 <script>
-    
-    import SectionHeader from './components/section/index.vue';
-    import headerTitle from './components/header/index.vue'
-    export default {
-        components: {
-            headerTitle,
-            SectionHeader
-        },
-        data() {
-            return {
+import SectionHeader from './components/section/index.vue';
+import headerTitle from './components/header/index.vue'
+export default {
+    components: {
+        headerTitle,
+        SectionHeader
+    },
+    data() {
+        return {
 
-            }
         }
     }
+}
     
 </script>
 <style lang="sass">
