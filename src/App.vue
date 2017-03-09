@@ -26,7 +26,6 @@ export default {
 </script>
 <style lang="sass">
     /*可以使用变量*/
-    
     $black:black;
     $white:white;
     .container {

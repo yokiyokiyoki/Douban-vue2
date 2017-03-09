@@ -1,6 +1,10 @@
 const path = require('path');
 // 引入vux-loader，添加vux2必须这样配置
 const vuxLoader = require('vux-loader')
+// 引入webpack，有些插件要用
+const webpack = require('webpack')
+// 提取css插件
+const ExtractTextPlugin = require("extract-text-webpack-plugin")
 let webpackConfig = {
     entry: {
         app: ['./src/main.js'],
@@ -77,7 +81,21 @@ let webpackConfig = {
                 secure: false
             }
         }
-    }
+    },
+    plugins: [
+        // 压缩js
+        // warnings作用是当插件在压缩过程中移除的无效代码或定义是显示警告信息
+        // 该插件只是支持es5,所以需要babel
+        new webpack.optimize.UglifyJsPlugin({
+            compress: {
+                warnings: false
+            }
+        }),
+        // 指定生产环境，以便在压缩时可以让 UglifyJS 自动删除代码块内的警告语句。
+        new webpack.DefinePlugin({
+            'process.env.NODE_ENV': JSON.stringify('production')
+        })
+    ]
 }
 // 添加vux2必须这样配置
 module.exports = vuxLoader.merge(webpackConfig, {
