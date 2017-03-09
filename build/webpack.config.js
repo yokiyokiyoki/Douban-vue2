@@ -5,6 +5,8 @@ const vuxLoader = require('vux-loader')
 const webpack = require('webpack')
 // 提取css插件
 const ExtractTextPlugin = require("extract-text-webpack-plugin")
+// 生成html
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 let webpackConfig = {
     entry: {
         app: ['./src/main.js'],
@@ -94,7 +96,8 @@ let webpackConfig = {
         // 指定生产环境，以便在压缩时可以让 UglifyJS 自动删除代码块内的警告语句。
         new webpack.DefinePlugin({
             'process.env.NODE_ENV': JSON.stringify('production')
-        })
+        }),
+        new HtmlWebpackPlugin()
     ]
 }
 // 添加vux2必须这样配置
