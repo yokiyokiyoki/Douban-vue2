@@ -7,11 +7,11 @@ const webpack = require('webpack')
 const ExtractTextPlugin = require("extract-text-webpack-plugin")
 // 生成html
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-let webpackConfig = {
+
+const webpackConfig = {
     entry: {
         app: ['./src/main.js'],
-        // 需要打包的第三方插件
-        // vendors: ['jquery']
+        // 需要打包的第三方插件 vendors: ['jquery']
     },
     output: {
         // 路径是从根目录到根目录下的dist，相当于cd进入
@@ -23,19 +23,17 @@ let webpackConfig = {
     },
     module: {
         // 加载各种js，img文件资源
-        rules: [{
+        rules: [
+            {
                 test: /\.js$/,
                 loaders: 'babel-loader',
                 query: {
                     presets: ['es2015']
                 },
                 exclude: /node_modules/
-            },
-            {
+            }, {
                 test: /\.scss$/,
-                loaders: ['style-loader', 'css-loader',
-                    'autoprefixer-loader', 'sass-loader'
-                ] //2.0不支持缩写
+                loaders: ['style-loader', 'css-loader', 'autoprefixer-loader', 'sass-loader'] //2.0不支持缩写
             }, {
                 test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
                 loader: 'url-loader',
@@ -67,8 +65,7 @@ let webpackConfig = {
             'vue': 'vue/dist/vue.js',
             'src': path.resolve(__dirname, '../src'),
             'components': path.resolve(__dirname, '../src/components'),
-            'img': path.resolve(__dirname, '../src/assets/img/'),
-
+            'img': path.resolve(__dirname, '../src/assets/img/')
         }
     },
     // webpack-dev-sever的配置
@@ -85,14 +82,14 @@ let webpackConfig = {
         }
     },
     plugins: [
-        // 压缩js
-        // warnings作用是当插件在压缩过程中移除的无效代码或定义是显示警告信息
-        // 该插件只是支持es5,所以需要babel
-        new webpack.optimize.UglifyJsPlugin({
-            compress: {
-                warnings: false
-            }
-        }),
+        // 压缩js warnings作用是当插件在压缩过程中移除的无效代码或定义是显示警告信息 该插件只是支持es5,所以需要babel
+        new webpack
+            .optimize
+            .UglifyJsPlugin({
+                compress: {
+                    warnings: false
+                }
+            }),
         // 指定生产环境，以便在压缩时可以让 UglifyJS 自动删除代码块内的警告语句。
         new webpack.DefinePlugin({
             'process.env.NODE_ENV': JSON.stringify('production')
@@ -102,10 +99,10 @@ let webpackConfig = {
 }
 // 添加vux2必须这样配置
 module.exports = vuxLoader.merge(webpackConfig, {
-    plugins: [{
-            name: 'vux-ui'
-        },
+    plugins: [
         {
+            name: 'vux-ui'
+        }, {
             name: 'duplicate-style'
         }
     ]

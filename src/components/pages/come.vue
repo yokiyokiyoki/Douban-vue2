@@ -10,7 +10,7 @@
                         <spinner></spinner>
                     </div>
                     <div class="content clearfix" v-show="comeComplete">
-                        <div v-for="item in listData[2]" class="block">
+                        <div v-for="item in listData[2]" class="block" :key="item.id">
                             <router-link :to="{name:'detail',params:{id:item.id}}">
                                 <img :src="item.images.medium">
                                 <p>{{item.title}}</p>
@@ -23,41 +23,37 @@
      </div>
 </template>
 <script>
-    import headerTitle from 'components/header/index.vue'
-    import {Scroller,Spinner} from 'vux'
-    export default{
-        data(){
-            return{
-                list: ['Top250', '正在热映', '即将上映']
-            }
+    import headerTitle from "components/header/index.vue";
+    import { Scroller, Spinner } from "vux";
+    export default {
+      data() {
+        return {
+          list: ["Top250", "正在热映", "即将上映"]
+        };
+      },
+      components: {
+        headerTitle,
+        Scroller,
+        Spinner
+      },
+      mounted() {},
+      // 因为数据已经存储在store里面了，可以直接用
+      computed: {
+        listData() {
+          return this.$store.state.listData;
         },
-        components:{
-            headerTitle,
-            Scroller,
-            Spinner
+        sliceListData() {
+          return this.$store.state.sliceListData;
         },
-        mounted() {
-            
+        comeComplete() {
+          return this.$store.state.comeComplete;
         },
-        // 因为数据已经存储在store里面了，可以直接用
-        computed:{
-            listData(){
-                return this.$store.state.listData;
-            },
-            sliceListData(){
-                return this.$store.state.sliceListData;
-            },
-            comeComplete(){
-                return this.$store.state.comeComplete;
-            },
-            comeSpinner(){
-                return this.$store.state.comeSpinner;
-            }
-        },
-        methods:{
-            
+        comeSpinner() {
+          return this.$store.state.comeSpinner;
         }
-    }
+      },
+      methods: {}
+    };
 </script>
 <style lang="sass">
     
