@@ -7,8 +7,10 @@
 
 4.`npm run dev`启动服务，`npm run build`打包项目资源
 
-5.下载该仓库，首先先`npm install`(最好使用cnpm，国内镜像的都可以),然后`npm run dev`，访问`http://localhost:8080`就可以看见了
+5.`npm(cnpm) i webpack -g`下载webpack
 
-6.或者可以直接访问[github pages](https://yokiyokiyoki.github.io/Douban-vue2/)
+6.下载该仓库，首先先`npm install`(最好使用cnpm，国内镜像的都可以),然后`npm run dev`，访问`http://localhost:8080`就可以看见了
+
+7.或者可以直接访问[github pages](https://yokiyokiyoki.github.io/Douban-vue2/)
 
 
